@@ -12,13 +12,18 @@ header, .section-1 {
 }
 
 header, section, .section-1 {
-    padding: 0 200px 0 200px;
+    padding: 0 300px 0 300px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header-text {
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 ul {
@@ -31,21 +36,23 @@ ul {
 
 .section-1 {
     display: flex;
-    /* justify-content: space-between; */
-    align-content: space-around;
-    padding-top: 30px;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 45px;
+    padding-bottom: 40px;
     flex-wrap: wrap;
 }
 
 .content-1 {
     flex: 1; 
     height: 300px;
-    width: 300px;
+    max-width: 450px;
 }
 
 img {
     height: 250px;
     width: auto;
+    align-self: center;
 }
 
 .main-text {
@@ -53,3 +60,18 @@ img {
     font-weight: bold;
 }
 
+.secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* buttons */
+
+button {
+    padding: 8px;
+    width: 100px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #3882FA;
+    color: white;
+}
