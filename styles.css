@@ -39,7 +39,7 @@ ul {
     justify-content: space-between;
     align-content: center;
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     flex-wrap: wrap;
 }
 
@@ -79,18 +79,19 @@ button {
 /* section-2 content */
 
 .section-2 {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 75px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    gap: 20px;
 }
 
 .box-flex {
     display: flex;
     text-align: center;
     align-items: center;
+    flex: 1;
 }
 
 .box {
@@ -98,9 +99,63 @@ button {
     height: 150px;
     border: 2px solid blue;
     border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 200px;
     width: 200px;
+}
+
+/* Section-3 content  */
+
+.section-3 {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+}
+
+.s3-main-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.section-3, .container-2 > p {
+    margin: 0;
+}
+
+#s3-subtext {
+    align-self: flex-end;
+    margin-right: 125px;
+    font-style: italic;
+    font-size: 27px;
+}
+
+/* Section 4 Content  */
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 1000px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: lightcyan;
+    gap: 10px;
 }
